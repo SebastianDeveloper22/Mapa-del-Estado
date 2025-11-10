@@ -1,0 +1,59 @@
+/* Panel flotante */
+#menu-filtros.panel {
+  position: absolute;
+  top: 75px;
+  right: 15px;
+  width: 60px; /* compacto, solo para "PP" */
+  font-family: "Segoe UI", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: width 0.3s ease;
+}
+
+/* Encabezado */
+#menu-filtros .panel-header {
+  background: linear-gradient(135deg, #4a90e2, #357ab8);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  cursor: default;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Cuerpo oculto por defecto */
+#menu-filtros .panel-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  background: #fafafa;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+/* Al pasar el mouse sobre el panel */
+#menu-filtros:hover {
+  width: 220px; /* se expande para mostrar filtros */
+}
+
+#menu-filtros:hover .panel-body {
+  max-height: 300px;
+  padding: 12px 14px;
+}
+
+/* Estilo de los checkboxes */
+#menu-filtros label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+}
+
+#menu-filtros input[type="checkbox"] {
+  accent-color: #4a90e2;
+  margin-right: 6px;
+}

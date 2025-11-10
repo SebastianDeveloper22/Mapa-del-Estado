@@ -1,0 +1,180 @@
+/* Contenedor del buscador */
+#search-widget {
+  position: absolute;
+  top: 15px;   /* justo debajo del user-bar */
+  left: 75px;
+  z-index: 1001;
+}
+
+/* Caja del buscador */
+#search-widget .leaflet-control-search {
+  float: none !important;
+  position: relative !important;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 2px 6px;
+  display: flex;
+  align-items: center;
+}
+
+/* Input estilo pill */
+#search-widget input {
+  height: 38px;
+  font-size: 15px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  width: 220px;
+  transition: width 0.3s ease;
+  background: #fff;
+  cursor: text;
+}
+
+#search-widget input:focus {
+  width: 280px;
+  box-shadow: 0 0 0 2px rgba(74,144,226,0.25);
+}
+
+
+/* Botón de búsqueda (rectángulo azul) */
+/* Botón de búsqueda: circular con ícono de lupa */
+#search-widget .search-button {
+  background: #4a90e2;              /* fondo azul elegante */
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;               /* lo hacemos redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Insertar la lupa con pseudo-elemento */
+#search-widget .search-button::before {
+  content: "\1F50D"; /* Unicode de la lupa 🔍 */
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Hover */
+#search-widget .search-button:hover {
+  background: #357ab8;
+}
+
+/* Contenedor de resultados */
+#search-widget .search-tooltip {
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  font-size: 14px;
+  max-height: 250px;
+  overflow-y: auto;
+  background: #fff;
+  padding: 4px 0;
+}
+
+/* Cada opción */
+#search-widget .search-tooltip li {
+  list-style: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+  font-family: "Segoe UI", sans-serif;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Última opción sin borde */
+#search-widget .search-tooltip li:last-child {
+  border-bottom: none;
+}
+
+/* Enlace dentro de la opción: layout con icono */
+#search-widget .search-tooltip li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.15s ease;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Iconito con pseudo-elemento: marcador */
+#search-widget .search-tooltip li a::before {
+  content: "📍";
+  font-size: 16px;
+  line-height: 1;
+  flex: 0 0 auto;
+  color: #357ab8;
+  transform: translateY(0.5px);
+}
+
+/* Hover: ligero énfasis */
+#search-widget .search-tooltip li:hover {
+  background: #f6f9ff;
+}
+
+#search-widget .search-tooltip li:hover a {
+  color: #357ab8;
+  transform: translateX(2px);
+  font-weight: 600; /* negrita al pasar el mouse */
+}
+
+/* Opción activa/seleccionada (cuando el plugin aplica su clase) */
+#search-widget .search-tooltip .search-selected,
+#search-widget .search-tooltip .search-selected a {
+  background: #eaf2ff;
+  color: #2a6edc;
+  font-weight: 700;
+}
+
+/* Scroll estilizado (WebKit y compatibles) */
+#search-widget .search-tooltip::-webkit-scrollbar {
+  width: 8px;
+}
+#search-widget .search-tooltip::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+#search-widget .search-tooltip::-webkit-scrollbar-thumb {
+  background: #c9d8f5;
+  border-radius: 10px;
+}
+#search-widget .search-tooltip::-webkit-scrollbar-thumb:hover {
+  background: #a9c2f1;
+}
+
+
+
+#municipio-selector {
+  position: absolute;
+  top: 15px;  /* debajo del buscador */
+  left: 470px;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+#municipio-selector select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+
+#search-widget .search-tooltip .match {
+  font-weight: 700;
+  color: #357ab8;
+}

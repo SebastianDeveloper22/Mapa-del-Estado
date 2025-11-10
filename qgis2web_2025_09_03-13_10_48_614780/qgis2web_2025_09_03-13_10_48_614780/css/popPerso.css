@@ -1,0 +1,68 @@
+/* Contenedor */
+.custom-popup{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    padding: 12px 14px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    min-width: 220px;
+}
+/* Titulo */
+.custom-popup h3{
+    margin: 0 0 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0078d7;
+    text-align: center;
+}
+
+/* Descripcion */
+.custom-popup p{
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+}
+
+/* Fecha y Hora */
+.custom-popup small{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Boton Eliminar */
+.custom-popup .delete-pin{
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s ease;
+}
+
+.custom-popup .delete-pin:hover{
+    background: #c9302c;
+    transform: scaleY(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaflet-popup-content{
+    margin: 4px !important;
+    width: auto !important;
+}
+
+.leaflet-popup-content-wrapper{
+    padding: 12px !important;
+    border-radius: 10px;
+}
+.leaflet-popup {
+    min-width: 300px;
+}
