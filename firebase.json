@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "qgis2web_09_03-13_10_48_614780",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
