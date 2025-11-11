@@ -1249,30 +1249,6 @@ document.getElementById('municipio').addEventListener('change', function(e) {
         setBounds();
 
         </script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector(".leaflet-control-layers-toggle");
-  const control = document.querySelector(".leaflet-control-layers");
-
-  if (toggle && control) {
-    // Abrir/cerrar al tocar el botón
-    toggle.addEventListener("click", (e) => {
-      e.stopPropagation();
-      control.classList.toggle("leaflet-control-layers-expanded");
-    });
-
-    // Cerrar al hacer click en el mapa
-    map.on("click", () => {
-      control.classList.remove("leaflet-control-layers-expanded");
-    });
-  }
-});
-</script>
-
-
-
-
     </body>
 
 
