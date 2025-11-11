@@ -47,8 +47,8 @@
 @media (max-width: 768px) {
   .user-bar {
     top: 8px;
-    left: 8px;
-    transform: none;
+    left: 50%;
+    transform: translateX(-50%);
     width: auto;              /* solo lo necesario */
     min-width: unset;         /* quitar mínimo ancho */
     max-width: 70%;           /* no más del 70% de pantalla */
