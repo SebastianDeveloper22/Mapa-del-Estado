@@ -65,18 +65,3 @@
     cursor: pointer;
 }
 
-/* 📱 En móviles: menú de capas siempre desplegado */
-@media (max-width: 768px) {
-  .leaflet-control-layers {
-    width: 220px; /* ancho fijo */
-  }
-
-  .leaflet-control-layers-list {
-    max-height: 300px;
-    padding: 12px 14px;
-    background: #fafafa;
-    overflow-y: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  }
-}
