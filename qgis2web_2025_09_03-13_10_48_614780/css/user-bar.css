@@ -19,17 +19,16 @@
     word-wrap: break-word;
 }
 
-/* 📱 Móviles: barra más ancha y alineada a la izquierda */
+/* 📱 En móviles: apilar elementos */
 @media (max-width: 768px) {
-    .user-bar {
-        top: 10px;
-        left: 10px;
-        transform: none;              /* ya no centrada */
-        width: calc(100% - 20px);     /* ocupa casi todo el ancho */
-        font-size: 16px;
-        text-align: left;
-        margin-bottom: 10px;          /* deja espacio debajo para buscador */
-    }
+  .user-bar {
+    top: 10px;
+    left: 10px;
+    transform: none;
+    width: calc(100% - 20px);
+    font-size: 16px;
+    text-align: left;
+  }
 }
 
 /* 💻 Tablets: centrada pero con más padding */
