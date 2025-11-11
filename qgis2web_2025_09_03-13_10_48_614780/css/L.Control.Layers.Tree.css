@@ -67,26 +67,26 @@
 /* 📱 Móviles: panel de capas compacto y centrado */
 @media (max-width: 768px) {
   .leaflet-control-layers-list {
-    position: fixed;          /* lo sacamos del flujo normal */
-    top: 140px;               /* debajo de user-bar + buscador + selector */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;               /* ocupa casi todo el ancho */
-    max-height: 40%;          /* no tapa todo el mapa */
-    overflow-y: auto;         /* scroll interno */
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    z-index: 9999;
-    font-size: 13px;
+    position: fixed !important;
+    top: 140px !important;          /* debajo de user-bar + buscador + selector */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 90% !important;
+    max-height: 40% !important;
+    overflow-y: auto !important;
+    background: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
+    z-index: 9999 !important;
+    font-size: 13px !important;
   }
 
   .leaflet-control-layers-toggle {
-    width: 36px;
-    height: 36px;
-    background: #4a90e2;      /* consistente con tu buscador */
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width: 36px !important;
+    height: 36px !important;
+    background: #4a90e2 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
   }
 }
 
