@@ -1,7 +1,6 @@
-
 .map-btn {
     position: fixed;
-    bottom: 75px;
+    bottom: 75px;   /* encima del logout-btn */
     left: 15px;
     height: 48px;
     width: 48px;
@@ -23,12 +22,46 @@
     z-index: 9999;
 }
 
-.map-btn:hover{
+.map-btn:hover {
     background: linear-gradient(135deg, hsl(219, 83%, 37%), #2565db);
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
-.map-btn:active{
+.map-btn:active {
     transform: scale(0.95);
+}
+
+/* 📱 Móviles: moverlo junto al logout-btn en esquina inferior derecha */
+@media (max-width: 768px) {
+    .map-btn {
+        bottom: 80px;   /* justo encima del logout-btn */
+        right: 12px;
+        left: auto;
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+    }
+}
+
+/* 💻 Tablets: mantener en la izquierda pero más grande */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .map-btn {
+        bottom: 80px;
+        left: 20px;
+        width: 52px;
+        height: 52px;
+        font-size: 23px;
+    }
+}
+
+/* 🖥️ Escritorio grande: más compacto */
+@media (min-width: 1440px) {
+    .map-btn {
+        bottom: 80px;
+        left: 20px;
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
 }
