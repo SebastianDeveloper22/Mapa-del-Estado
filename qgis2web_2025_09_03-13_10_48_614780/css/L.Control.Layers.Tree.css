@@ -65,10 +65,10 @@
     cursor: pointer;
 }
 
-/* 📱 En móviles: menú de capas tipo dropdown hacia abajo */
+/* 📱 En móviles: menú de capas tipo dropdown */
 @media (max-width: 768px) {
   .leaflet-control-layers {
-    position: relative !important;   /* que se comporte como contenedor normal */
+    position: relative !important;   /* contenedor normal */
     display: inline-block;
     margin: 10px;
   }
@@ -84,9 +84,9 @@
 
   .leaflet-control-layers-list {
     position: absolute;
-    top: 100%;                       /* se despliega hacia abajo del botón */
+    top: 100%;                       /* justo debajo del botón */
     left: 0;
-    width: 90vw;                      /* ocupa casi todo el ancho del móvil */
+    width: 90vw;                      /* casi todo el ancho del móvil */
     max-height: 50vh;                 /* no tapa todo el mapa */
     overflow-y: auto;
     background: #fff;
