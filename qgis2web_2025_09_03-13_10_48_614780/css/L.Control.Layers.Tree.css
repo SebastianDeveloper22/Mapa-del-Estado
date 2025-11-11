@@ -65,39 +65,3 @@
     cursor: pointer;
 }
 
-/* 📱 En móviles: menú de capas tipo dropdown */
-@media (max-width: 768px) {
-  .leaflet-control-layers {
-    position: relative !important;   /* contenedor normal */
-    display: inline-block;
-    margin: 10px;
-  }
-
-  .leaflet-control-layers-toggle {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: #4a90e2;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
-
-  .leaflet-control-layers-list {
-    position: absolute;
-    top: 100%;                       /* justo debajo del botón */
-    left: 0;
-    width: 90vw;                      /* casi todo el ancho del móvil */
-    max-height: 50vh;                 /* no tapa todo el mapa */
-    overflow-y: auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    z-index: 9999;
-    display: none;                    /* oculto por defecto */
-  }
-
-  /* Cuando el control está expandido, mostrar el menú */
-  .leaflet-control-layers-expanded .leaflet-control-layers-list {
-    display: block;
-  }
-}

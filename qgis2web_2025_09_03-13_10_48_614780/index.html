@@ -1249,6 +1249,21 @@ document.getElementById('municipio').addEventListener('change', function(e) {
         setBounds();
 
         </script>
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".leaflet-control-layers-toggle");
+  const control = document.querySelector(".leaflet-control-layers");
+
+  if (toggle && control) {
+    toggle.addEventListener("click", () => {
+      control.classList.toggle("leaflet-control-layers-expanded");
+    });
+  }
+});
+</script>
+
+
     </body>
 
 
