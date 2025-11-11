@@ -179,63 +179,10 @@
   color: #357ab8;
 }
 
-
-/* Escritorio 1080p */
-@media (min-width: 1025px) and (max-width: 1439px) {
-  #search-widget { top: 60px; left: 75px; }
-  #municipio-selector { top: 15px; left: 470px; }
-}
-
-/* iPad / tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-  #search-widget {
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  #municipio-selector {
-    top: 110px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-/* Celulares */
+/* 📱 En móviles: ocultar buscador y selector */
 @media (max-width: 768px) {
-  #search-widget {
-    top: 45px;                /* debajo de user-bar */
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;              /* solo lo necesario */
-    max-width: 80%;
-  }
-
-  #search-widget input {
-    width: 140px;             /* más pequeño horizontalmente */
-    font-size: 13px;
-    padding: 0 10px;
-  }
-
-  #search-widget .search-button {
-    width: 32px;
-    height: 32px;
-    font-size: 14px;
-  }
-
+  #search-widget,
   #municipio-selector {
-    top: 90px;                /* debajo del buscador */
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
-    max-width: 90%;
-    font-size: 12px;
-    padding: 4px 8px;
+    display: none !important;
   }
-
-  #municipio-selector select {
-    font-size: 12px;
-    padding: 4px 6px;
-    max-width: 100%;
-  }
-
 }

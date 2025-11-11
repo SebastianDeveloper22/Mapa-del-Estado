@@ -19,43 +19,9 @@
     word-wrap: break-word;
 }
 
-/* Escritorio 1080p */
-@media (min-width: 1025px) and (max-width: 1439px) {
-  .user-bar {
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    padding: 8px 15px;
-    max-width: 400px;
-  }
-}
-
-/* iPad / tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .user-bar {
-    top: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 15px;
-    padding: 10px 20px;
-    max-width: 70%;
-  }
-}
-
-/* Celulares */
+/* 📱 En móviles: ocultar barra de usuario */
 @media (max-width: 768px) {
   .user-bar {
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;              /* solo lo necesario */
-    min-width: unset;         /* quitar mínimo ancho */
-    max-width: 70%;           /* no más del 70% de pantalla */
-    font-size: 12px;          /* letras más pequeñas */
-    padding: 4px 8px;         /* menos padding */
-    text-align: left;
-    border-radius: 4px;
+    display: none !important;
   }
-
 }
