@@ -64,3 +64,60 @@
 .leaflet-layerstree-expand-collapse {
     cursor: pointer;
 }
+/* 📱 Móviles: panel centrado y compacto */
+@media (max-width: 768px) {
+  .leaflet-control-layers-list {
+    position: fixed;         /* lo sacamos del flujo normal */
+    top: 140px;              /* debajo de user-bar + buscador + selector */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;              /* ocupa casi todo el ancho */
+    max-height: 50%;         /* no tapa todo el mapa */
+    overflow-y: auto;        /* scroll interno */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 9999;
+    font-size: 13px;
+  }
+
+  .leaflet-control-layers-toggle {
+    width: 36px;
+    height: 36px;
+    background: #4a90e2;     /* botón azul consistente con buscador */
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+}
+
+/* 💻 Tablets: panel lateral más ancho */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .leaflet-control-layers-list {
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    width: 300px;
+    max-height: 60%;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 14px;
+  }
+}
+
+/* 🖥️ Escritorio: panel compacto en esquina */
+@media (min-width: 1025px) {
+  .leaflet-control-layers-list {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 250px;
+    max-height: 70%;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 14px;
+  }
+}
