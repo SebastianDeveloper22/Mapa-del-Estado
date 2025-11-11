@@ -65,3 +65,35 @@
     cursor: pointer;
 }
 
+/* 📱 En móviles: menú de capas tipo panel */
+@media (max-width: 768px) {
+  .leaflet-control-layers {
+    position: absolute;
+    top: 75px;
+    right: 15px;
+    width: 60px; /* compacto */
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: width 0.3s ease;
+    z-index: 1000;
+  }
+
+  .leaflet-control-layers-expanded {
+    width: 220px; /* se expande */
+  }
+
+  .leaflet-control-layers-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 10px;
+    background: #fafafa;
+  }
+
+  .leaflet-control-layers-expanded .leaflet-control-layers-list {
+    max-height: 300px;
+    padding: 12px 14px;
+  }
+}
