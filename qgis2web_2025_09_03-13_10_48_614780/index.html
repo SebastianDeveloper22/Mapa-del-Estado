@@ -1250,18 +1250,29 @@ document.getElementById('municipio').addEventListener('change', function(e) {
 
         </script>
 
-        <script>
+<script>
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".leaflet-control-layers-toggle");
   const control = document.querySelector(".leaflet-control-layers");
 
   if (toggle && control) {
-    toggle.addEventListener("click", () => {
+    // Al tocar el botón, alterna abrir/cerrar
+    toggle.addEventListener("click", (e) => {
+      e.stopPropagation(); // evita que el click se propague al mapa
       control.classList.toggle("leaflet-control-layers-expanded");
     });
+
+    // Al hacer click en el mapa, cierra el menú
+    const mapElement = document.querySelector("#map"); // ajusta al id de tu mapa
+    if (mapElement) {
+      mapElement.addEventListener("click", () => {
+        control.classList.remove("leaflet-control-layers-expanded");
+      });
+    }
   }
 });
 </script>
+
 
 
     </body>
