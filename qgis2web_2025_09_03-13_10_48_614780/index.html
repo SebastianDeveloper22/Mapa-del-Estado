@@ -1252,18 +1252,9 @@ document.getElementById('municipio').addEventListener('change', function(e) {
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector(".leaflet-control-layers-toggle");
   const control = document.querySelector(".leaflet-control-layers");
 
-  if (toggle && control) {
-    // Abrir/cerrar al tocar el botón (funciona en PC y móvil)
-    ["click", "touchstart"].forEach(evt => {
-      toggle.addEventListener(evt, (e) => {
-        e.stopPropagation(); // evita que el click se propague al mapa
-        control.classList.toggle("leaflet-control-layers-expanded");
-      });
-    });
-
+  if (control) {
     // Cerrar al hacer click/tap en el mapa
     ["click", "touchstart"].forEach(evt => {
       map.on(evt, () => {
