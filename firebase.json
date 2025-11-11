@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "qgis2web_09_03-13_10_48_614780",
+    "public": "qgis2web_2025_09_03-13_10_48_614780",
     "ignore": [
       "firebase.json",
       "**/.*",
