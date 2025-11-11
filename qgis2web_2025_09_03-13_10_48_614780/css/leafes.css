@@ -204,7 +204,7 @@
 @media (max-width: 768px) {
   #search-widget {
     top: 45px;                /* debajo de user-bar */
-    left: 8px;
+    left: 50%;
     transform: translateX(-50%);
     width: auto;              /* solo lo necesario */
     max-width: 80%;
@@ -224,7 +224,7 @@
 
   #municipio-selector {
     top: 90px;                /* debajo del buscador */
-    left: 8px;
+    left: 50%;
     transform: translateX(-50%);
     width: auto;
     max-width: 90%;
