@@ -19,7 +19,31 @@
     word-wrap: break-word;
 }
 
-/* 📱 En móviles: apilar elementos */
+/* Escritorio 1080p */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .user-bar {
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 8px 15px;
+    max-width: 400px;
+  }
+}
+
+/* iPad / tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .user-bar {
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    padding: 10px 20px;
+    max-width: 70%;
+  }
+}
+
+/* Celulares */
 @media (max-width: 768px) {
   .user-bar {
     top: 10px;
@@ -28,23 +52,6 @@
     width: calc(100% - 20px);
     font-size: 16px;
     text-align: left;
+    margin-bottom: 10px; /* espacio para buscador */
   }
-}
-
-/* 💻 Tablets: centrada pero con más padding */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .user-bar {
-        padding: 10px 20px;
-        font-size: 15px;
-        max-width: 70%;
-    }
-}
-
-/* 🖥️ Escritorio grande: más compacta */
-@media (min-width: 1440px) {
-    .user-bar {
-        font-size: 14px;
-        padding: 6px 12px;
-        max-width: 400px;
-    }
 }

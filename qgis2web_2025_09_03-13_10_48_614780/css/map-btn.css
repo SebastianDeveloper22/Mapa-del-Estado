@@ -33,15 +33,16 @@
 }
 
 /* 📱 Móviles: moverlo junto al logout-btn en esquina inferior derecha */
+/* Celulares: justo encima del logout, en la izquierda */
 @media (max-width: 768px) {
-    .map-btn {
-        bottom: 80px;   /* justo encima del logout-btn */
-        right: 12px;
-        left: auto;
-        width: 56px;
-        height: 56px;
-        font-size: 24px;
-    }
+  .map-btn {
+    bottom: 80px;
+    left: 12px;
+    right: auto;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
 }
 
 /* 💻 Tablets: mantener en la izquierda pero más grande */

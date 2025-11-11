@@ -33,15 +33,16 @@
 }
 
 /* 📱 Móviles: botón más grande y en esquina inferior derecha */
+/* Celulares: esquina inferior izquierda */
 @media (max-width: 768px) {
-    #logout-btn {
-        bottom: 12px;
-        left: auto;
-        right: 12px;
-        width: 56px;
-        height: 56px;
-        font-size: 24px;
-    }
+  #logout-btn {
+    bottom: 12px;
+    left: 12px;
+    right: auto;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
 }
 
 /* 💻 Tablets: mantener abajo a la izquierda pero un poco más grande */
