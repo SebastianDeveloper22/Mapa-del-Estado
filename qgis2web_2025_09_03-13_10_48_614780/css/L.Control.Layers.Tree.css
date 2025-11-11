@@ -67,28 +67,12 @@
 /* 📱 Móviles: panel de capas compacto y centrado */
 @media (max-width: 768px) {
   .leaflet-control-layers-list {
-    position: fixed !important;
-    top: 140px !important;          /* debajo de user-bar + buscador + selector */
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 90% !important;
-    max-height: 40% !important;
-    overflow-y: auto !important;
-    background: #fff !important;
-    border-radius: 8px !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
-    z-index: 9999 !important;
-    font-size: 13px !important;
-  }
-
-  .leaflet-control-layers-toggle {
-    width: 36px !important;
-    height: 36px !important;
-    background: #4a90e2 !important;
-    border-radius: 6px !important;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
+    font-size: 13px;
+    max-height: 200px;
+    overflow-y: auto;
   }
 }
+
 
 /* 💻 Tablets: panel lateral más ancho */
 @media (min-width: 769px) and (max-width: 1024px) {
