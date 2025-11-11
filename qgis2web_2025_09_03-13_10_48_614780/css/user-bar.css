@@ -46,12 +46,16 @@
 /* Celulares */
 @media (max-width: 768px) {
   .user-bar {
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: 8px;
     transform: none;
-    width: calc(100% - 20px);
-    font-size: 16px;
+    width: auto;              /* solo lo necesario */
+    min-width: unset;         /* quitar mínimo ancho */
+    max-width: 70%;           /* no más del 70% de pantalla */
+    font-size: 12px;          /* letras más pequeñas */
+    padding: 4px 8px;         /* menos padding */
     text-align: left;
-    margin-bottom: 8px; /* deja espacio debajo */
+    border-radius: 4px;
   }
+
 }
