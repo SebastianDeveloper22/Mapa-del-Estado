@@ -202,21 +202,23 @@
 
 /* Celulares */
 @media (max-width: 768px) {
-  #search-widget {
-    top: 60px; /* debajo de user-bar */
+   #search-widget {
+    top: 60px; /* debajo de la user-bar */
     left: 10px;
     right: 10px;
     transform: none;
     width: calc(100% - 20px);
   }
+
   #search-widget input { width: 100%; font-size: 16px; }
 
-  #municipio-selector {
+ #municipio-selector {
     top: 110px; /* debajo del buscador */
     left: 10px;
     right: 10px;
     transform: none;
     width: calc(100% - 20px);
   }
+
   #municipio-selector select { width: 100%; font-size: 16px; }
 }

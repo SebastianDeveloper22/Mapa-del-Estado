@@ -52,6 +52,6 @@
     width: calc(100% - 20px);
     font-size: 16px;
     text-align: left;
-    margin-bottom: 10px; /* espacio para buscador */
+    margin-bottom: 8px; /* deja espacio debajo */
   }
 }
